@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WomenAlly</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1 id="brand"><img src="./images/WomenAlly logo_edited.webp" alt="WomenAlly logo"></h1>
+        <nav class="navbar">
+        <ul class="nav-links">
+
+         <li class="navigation-searchBar"><img src="./images/search.svg" alt="search"id="searchIcon">
+            <span class="tooltiptext">Search</span>
+            <div id="searchInputParent"><img src="./images/back.svg" alt="exit"class="backIcon"><input type="text"id="searchInput"placeholder="Search WomenAlly"></div>
+         </li> 
+         <li class="navigation-feed"><img src="./images/feed.svg" alt="feed"id="feedIcon"><span class="tooltiptext">Feed</span>
+         </li>        
+         <li class="navigation-userProfile"><img src="./images/user.svg" alt="user-profile"id="userIcon"><span class="tooltiptext">Profile</span>
+
+        </li>
+         <li class="navigation-feedBackBtn"><img src="./images/caret.svg" alt="menu"id="caretDownIcon"><span class="tooltiptext">Menu</span>
+        </li>
+
+        </ul>
+    </nav>
+</header>
+
+
+<aside id="feed">
+    <div class="userInfo"id="first">
+        <img src="./images/user.svg" alt="user-profile"class="userDpCreatePost">
+        <div class="name">User Name</div>
+        </div>
+
+    <div class="item-wrapper">
+        <img src="./images/notification.svg" alt="notification"class='feedIcon'>
+        <div class="feedback">Notifications</div>
+    </div> 
+    
+    <div class="item-wrapper">
+        <img src="./images/group.svg" alt="group"class='feedIcon'>
+        <div class="feedback">HerMeets</div>
+    </div>
+
+    <div class="item-wrapper">
+        <img src="./images/microphone.svg" alt="microphone"class='feedIcon'>
+        <div class="feedback">HerTalks</div>
+    </div>
+
+    <div class="item-wrapper">
+        <img src="./images/chat.svg" alt="chat"class='feedIcon'>
+        <div class="feedback">Chat</div>
+    </div>
+
+    <div class="item-wrapper">
+        <img src="./images/watch.svg" alt="watch"class='feedIcon'>
+        <div class="feedback">Watch</div>
+    </div>
+
+</aside>
+
+<article id="userAccountInfo">
+<ul>
+    <li id="myAccount">My account</li>
+    <li id="logOut">Log out</li>
+
+</ul>
+</article>
+
+<article id="feedbackArtcle">
+    <div class="feedBackListUl">
+
+        <div class="item-wrapper"id="first">
+            <img src="./images/exclamation.svg" alt="feedback"class='feedbackIcon'>
+            <div class="firstHeader">
+        <div class="feedback-header">Give feedback</div>
+    <p class="feedback-para">Help us improve WomenAlly.</p>
+</div>
+</div>
+
+    <div class="item-wrapper">
+        <img src="./images/setting.svg" alt="settings"class='feedbackIcon'>
+        <div class="feedback">Settings & privacy</div>
+    </div>
+    <div class="item-wrapper">
+        <img src="./images/help.svg" alt="help"class='feedbackIcon'>
+        <div class="feedback">
+            Help & support
+        </div>
+        </div>
+
+        <div class="item-wrapper">
+            <img src="./images/terms.svg" alt="rules-icon"class='feedbackIcon'>
+        <div class="feedback">Terms & conditions</div>
+        </div>
+        <div class="item-wrapper">
+            <img src="./images/logout.svg" alt="open-icon"class='feedbackIcon'>
+        <div class="feedback">Log out</div>
+        </div>
+
+    </div>
+</article>
+<main>
+<section id="createPostSection"class="section">
+<div class="userProfile">
+    <img src="./images/user.svg" alt="user-profile"id="profile">
+</div>
+<input type="text"placeholder="What's on your mind?"id="createPostInput">
+</section>
+
+<section id="createMeetSection"class="section">
+   <button><img src="./images/plus.svg" alt="plus-icon"id="plus">Create Meet</button>
+    </section>
+
+    <section id="createCommunitySection"class="section">
+        <button><img src="./images/community.svg" alt="community-icon"id="community">Create Community</button>
+         </section>
+     
+<!--Demo post-->
+
+<section class="section postSection">
+    <div class="userInfoCreatePost">
+        <img src="./images/user.svg" alt="user-profile" class="userDpCreatePost">
+    <div class="name">Team WomenAlly</div>
+</div>
+    <p class="postContent">Hello, visitor. We are team WomenAlly,India's one of a kind platform for Women. A warm welcome to our site. WomenAlly is in making right now. As the saying goes good things take time,there's no wonder WomenAlly is taking time,right? Stay tuned for an awesome WomenAlly for awesome women!</p>
+    <img src="https://images.unsplash.com/photo-1551892589-865f69869476?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3VjY2Vzc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" class="userAttachedPic"alt="group of women">
+</section>
+</main>
+
+<article class="createPostCell">
+    <h1 id="createPostHeader">Create post</h1>
+    <div class="closePostCell"><img src="./images/close.svg" alt="close btn"id="closeSign"></div>
+
+    <div class="userInfoCreatePost">
+    <img src="./images/user.svg" alt="user-profile"class="userDpCreatePost">
+    <div class="name">User name</div>
+    </div>
+<textarea name="What's on your mind?" id="writePost"placeholder="What's on your mind?" cols="30" rows="6"></textarea>
+
+<div class="addPicWrapper">
+    <img src="./images/pic.svg" alt="image-icon"class="addPic">
+    <label for="files" class="fileLabel">Add image to your post</label>
+    <input class="addPicWrapperInput"type="file"id="files"style="visibility:hidden;"accept="image/*"multiple="false">
+</div><button id="postBtn">Post</button>
+</article>
+
+<script src="app.js"></script>
+</body>
+
+</html>
